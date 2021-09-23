@@ -1,0 +1,30 @@
+[Spectrometer]
+FFTpoints = 64000
+
+SourceFormat      = VDIX
+SourceChannels    = 4
+BitsPerSample     = 2
+BandwidthHz       = 32e6
+SourceSkipSeconds = 0
+
+UseFile1Channel   = 1
+UseFile2Channel   = 1
+
+ChannelOrderIncreasing = True
+
+PlotProgress = No
+DoCrossPolarization = No
+MaxSourceBufferMB = 256
+FFTIntegrationTimeSec = 540
+
+NumCPUCores = 4
+WindowType = Hanning
+FFToverlapFactor = 2
+
+SinkFormat = Binary
+
+PCalOffsetHz = 10e3
+ExtractPCal = No
+
+BaseFilename1 = none
+BaseFilename2 = none
